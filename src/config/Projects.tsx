@@ -1,269 +1,125 @@
-import Appwrite from '@/components/technologies/Appwrite';
-import Bun from '@/components/technologies/Bun';
+import JavaScript from '@/components/technologies/JavaScript';
 import ExpressJs from '@/components/technologies/ExpressJs';
 import Github from '@/components/technologies/Github';
-import MDXIcon from '@/components/technologies/MDXIcon';
 import MongoDB from '@/components/technologies/MongoDB';
-import Motion from '@/components/technologies/Motion';
-import Netlify from '@/components/technologies/Netlify';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
-import Sanity from '@/components/technologies/Sanity';
-import Shadcn from '@/components/technologies/Shadcn';
-import SocketIo from '@/components/technologies/SocketIo';
-import TailwindCss from '@/components/technologies/TailwindCss';
-import ThreeJs from '@/components/technologies/ThreeJs';
-import TypeScript from '@/components/technologies/TypeScript';
-import Vercel from '@/components/technologies/Vercel';
 import { Project } from '@/types/project';
+import FastAPI from '@/components/technologies/FastAPI';
+import Docker from '@/components/technologies/Docker';  
+import Python from '@/components/technologies/Python';  
+import Redis from '@/components/technologies/Redis';  
+import Kite from '@/components/technologies/Kite';
+import Flutter from '@/components/technologies/Flutter';
+import Dart from '@/components/technologies/Dart';
+import Bert from '@/components/technologies/Bert';
+import JMeter from '@/components/technologies/Jmeter';
+
+
 
 export const projects: Project[] = [
   {
-    title: 'NotesBuddy',
-    description:
-      'A comprehensive study platform with notes, flashcards, quizzes, AI chatbot, and interactive learning tools',
-    image: '/project/notesbuddy.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/notesbuddy.mp4?tr=orig',
-    link: 'https://notesbuddy.in',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
-    ],
-    github: 'https://github.com/ramxcodes/notesbuddy',
-    live: 'https://notesbuddy.in',
-    details: true,
-    projectDetailsPageSlug: '/projects/notesbuddy',
-    isWorking: true,
-  },
+  title: 'SuperTrAId',
+  description:
+    'An AI-powered virtual trading and investment platform that allows users to backtest strategies using real-market data with virtual capital, featuring smart portfolios, SuperBundles, alerts, and LLM-guarded interactions.',
+  image: '/project/supertraid.png',
+  video: '#',
+  link: '#',
+  technologies: [
+    { name: 'FastAPI', icon: <FastAPI key="fastapi" /> },
+    { name: 'Python', icon: <Python key="python" /> },
+    { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
+    { name: 'Redis', icon: <Redis key="redis" /> },
+    { name: 'Docker', icon: <Docker key="docker" /> },
+    { name: 'Kite', icon: <Kite key="kite" /> },
+    { name: 'NodeJs', icon: <NodeJs key="nodejs" /> },
+    { name: 'ExpressJs', icon: <ExpressJs key="expressjs" /> },
+    { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
+    { name: 'React', icon: <ReactIcon key="react" /> },
+    { name: 'GitHub', icon: <Github key="github" /> },
+  ],
+  github: 'https://github.com/RyanRoy37/SuperTrAId',
+  live: '#',
+  details: true,
+  projectDetailsPageSlug: '/projects/supertraid',
+  isWorking: false,
+},
+{
+  title: 'Red-Tape',
+  description:
+    'A phishing detection system accessible via a browser plugin or web app that accurately identifies malicious websites using URL intelligence, certificate inspection, page content analysis, and behavioral monitoring.',
+  image: '/project/redtape.png',
+  video: '#',
+  link: '#',
+  technologies: [
+    { name: 'Python', icon: <Python key="python" /> },
+    { name: 'FastAPI', icon: <FastAPI key="fastapi" /> },
+    { name: 'JavaScript', icon: <JavaScript key="js" /> },
+  ],
+  github: 'https://github.com/RyanRoy37/Red-Tape',
+  live: '#',
+  details: true,
+  projectDetailsPageSlug: '/projects/redtape',
+  isWorking: false,
+},
+
+  
   {
-    title: 'Appwrite MCP Server',
-    description:
-      'Model Context Protocol server for seamless Appwrite database operations with 7 powerful tools and 99.9% success rate',
-    image: '/project/appwrite.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/appwrite.mp4',
-    link: 'https://mcp.ramx.in/',
-    technologies: [
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Bun', icon: <Bun key="bun" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Appwrite', icon: <Appwrite key="appwrite" /> },
-    ],
-    github: 'https://github.com/ramxcodes/mcp-server',
-    live: 'https://mcp.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/appwrite-mcp-server',
-    isWorking: true,
-  },
+  title: 'HORUS 🦅',
+  description:
+    'Flutter-based offline bird identification app for bird watchers, using AI-powered image recognition to detect and classify bird species and provide detailed information on birds commonly found in Bengaluru.',
+  image: '/project/horus.png',
+  video: '',
+  link: '',
+  technologies: [
+    { name: 'Flutter', icon: <Flutter key="flutter" /> },
+    { name: 'Dart', icon: <Dart key="dart" /> },
+  ],
+  github: 'https://github.com/RyanRoy37/Horus',
+  live: 'For development purposes only',
+  details: true,
+  projectDetailsPageSlug: '/projects/horus',
+  isWorking: true,
+},
+
   {
-    title: 'Syncify',
-    description:
-      'Real-time music streaming platform with synchronized playback, live chat, and social listening features',
-    image: '/project/syncify.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/syncify.mp4',
-    link: 'https://syncify.rocks',
-    technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Node.js', icon: <NodeJs key="nodejs" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
-    ],
-    github: 'https://github.com/ramxcodes/syncify',
-    live: 'https://syncify.rocks',
-    details: true,
-    projectDetailsPageSlug: '/projects/syncify',
-    isWorking: true,
-  },
+  title: 'LLM Guardrail Middleware',
+  description:
+    'Production-ready security middleware for Large Language Models that detects prompt injection, jailbreak attempts, banned words, and sensitive information before prompts reach the LLM.',
+  image: '/project/llm-guardrail.png',
+  video: '',
+  link: '',
+  technologies: [
+    { name: 'FastAPI', icon: <FastAPI key="fastapi" /> },
+    { name: 'Python', icon: <Python key="python" /> },
+    { name: 'BERT ', icon: <Bert key="bert-tiny" /> },
+    { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
+  ],
+  github: 'https://github.com/RyanRoy37/LLM-GuardRail-Middleware',
+  live: 'For development purposes only',
+  details: true,
+  projectDetailsPageSlug: '/projects/llm-guardrail',
+  isWorking: true,
+},
+
   {
-    title: 'Pasandida Aurat',
-    description:
-      'Innovative dating platform featuring anonymous questions and authentic connections - currently in development',
-    image: '/project/pasandida.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/pasandida.mp4',
-    link: 'https://www.pasandidaurat.com/',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Prisma', icon: <Prisma key="prisma" /> },
-      { name: 'PostgreSQL', icon: <PostgreSQL key="postgresql" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Socket.io', icon: <SocketIo key="socketio" /> },
-    ],
-    live: 'https://www.pasandidaurat.com/',
-    details: true,
-    projectDetailsPageSlug: '/projects/pasandida-aurat',
-    isWorking: false, // Currently in development
-  },
-  {
-    title: 'The Quest',
-    description:
-      'Personal challenge tracker for completing 500 DSA problems, earning ₹300,000, and improving fitness within 6 months',
-    image: '/project/quest.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/quest.mp4',
-    link: 'https://quest.ramx.in/',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-    ],
-    github: 'https://github.com/ramxcodes/the-quest',
-    live: 'https://quest.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/the-quest',
-    isWorking: true,
-  },
-  {
-    title: 'FestX',
-    description:
-      "Comprehensive event management platform for college festivals and hackathons built for NMIMS'24 Hackathon",
-    image: '/project/festx.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/fest-x.mp4',
-    link: 'https://fest-x.ramx.in/',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'MongoDB', icon: <MongoDB key="mongodb" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-    ],
-    github: 'https://github.com/ramxcodes/fest-x',
-    live: 'https://fest-x.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/fest-x',
-    isWorking: true,
-  },
-  {
-    title: "I'm a chill guy",
-    description:
-      'AI-powered GitHub profile roaster with intelligent analysis, witty commentary, and social sharing features',
-    image: '/project/chillguy.png',
-    link: 'https://chillguy.ramx.in',
-    technologies: [
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Express.js', icon: <ExpressJs key="expressjs" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Netlify', icon: <Netlify key="netlify" /> },
-      { name: 'GitHub', icon: <Github key="github" /> },
-    ],
-    github: 'https://github.com/ramxcodes/chill-guy',
-    live: 'https://chillguy.ramx.in',
-    details: true,
-    projectDetailsPageSlug: '/projects/chill-guy',
-    isWorking: true,
-  },
-  {
-    title: "Ram's Space",
-    description:
-      'Personal poetry and blog platform featuring emotional stories, poems, and creative writing with dark/light theme support',
-    image: '/project/ramspace.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/ramspace.mp4',
-    link: 'https://blog.ramx.in/',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'MDX', icon: <MDXIcon key="mdx" /> },
-    ],
-    live: 'https://blog.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/poems-blog',
-    isWorking: true,
-  },
-  {
-    title: 'Intent JS',
-    description:
-      'Modern JavaScript library website with advanced animations, interactive playground, and comprehensive documentation',
-    image: '/project/intent.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/intent.mp4',
-    link: 'https://intent-js.ramx.in',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Motion', icon: <Motion key="motion" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-    ],
-    github: 'https://github.com/ramxcodes/intent-js',
-    live: 'https://intent-js.ramx.in',
-    details: true,
-    projectDetailsPageSlug: '/projects/intent-js',
-    isWorking: true,
-  },
-  {
-    title: 'Moonstone 2K25',
-    description:
-      "Official website for Medicaps University's premier annual college festival with event management and registration",
-    image: '/project/moonstone.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/moonstone.mp4',
-    link: 'https://moonstone.ramx.in/',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Motion', icon: <Motion key="motion" /> },
-      { name: 'Three.js', icon: <ThreeJs key="threejs" /> },
-      { name: 'shadcn/ui', icon: <Shadcn key="shadcn" /> },
-    ],
-    github: 'https://github.com/ramxcodes/moonstone-fest',
-    live: 'https://moonstone.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/moonstone-fest',
-    isWorking: true,
-  },
-  {
-    title: 'Valorant Remastered',
-    description:
-      'Gaming website with immersive 3D animations, agent showcases, and performance-optimized Valorant experience',
-    image: '/project/valorant.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/valorant.mp4',
-    link: 'https://valorant.ramx.in',
-    technologies: [
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'React', icon: <ReactIcon key="react" /> },
-    ],
-    github: 'https://github.com/ramxcodes/valorant-remastered',
-    live: 'https://valorant.ramx.in',
-    details: true,
-    projectDetailsPageSlug: '/projects/valorant-remastered',
-    isWorking: true,
-  },
-  {
-    title: 'That Startup',
-    description:
-      'Startup listing and pitching platform where entrepreneurs can submit ideas, vote on concepts, and connect with founders',
-    image: '/project/that-startup.png',
-    video: 'https://ik.imagekit.io/hokb3mrdr/that-startup.mp4',
-    link: 'https://that-startup.ramx.in/',
-    technologies: [
-      { name: 'Next.js', icon: <NextJs key="nextjs" /> },
-      { name: 'TypeScript', icon: <TypeScript key="typescript" /> },
-      { name: 'Tailwind CSS', icon: <TailwindCss key="tailwindcss" /> },
-      { name: 'Sanity', icon: <Sanity key="sanity" /> },
-      { name: 'Vercel', icon: <Vercel key="vercel" /> },
-    ],
-    github: 'https://github.com/ramxcodes/that-startup',
-    live: 'https://that-startup.ramx.in/',
-    details: true,
-    projectDetailsPageSlug: '/projects/that-startup',
-    isWorking: true,
-  },
+  title: 'Rate Limiting Algorithms',
+  description:
+    'FastAPI-based project implementing and benchmarking multiple API rate-limiting algorithms—Fixed Window, Sliding Window Counter, Token Bucket, and Leaky Bucket—to protect APIs against abuse, DoS-style traffic, and resource exhaustion.',
+  image: '/project/ratelimiters.png',
+  video: '',
+  link: '',
+  technologies: [
+    { name: 'FastAPI', icon: <FastAPI key="fastapi" /> },
+    { name: 'Python', icon: <Python key="python" /> },
+    { name: 'Apache JMeter', icon: <JMeter key="jmeter" /> },
+  ],
+  github: 'https://github.com/RyanRoy37/Rate-Limiters',
+  live: 'for development purposes only',
+  details: true,
+  projectDetailsPageSlug: '/projects/ratelimiters',
+  isWorking: true,
+}
+
 ];

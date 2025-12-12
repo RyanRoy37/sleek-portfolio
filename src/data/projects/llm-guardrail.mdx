@@ -1,0 +1,51 @@
+---
+title: 'LLM Guardrail Middleware'
+description: 'Security middleware that detects prompt injection, jailbreak attempts, banned words, and sensitive data before prompts reach LLMs.'
+image: '/project/llm-guardrail.png'
+technologies:
+  ['FastAPI', 'Python', 'BERT Tiny', 'Hugging Face', 'PostgreSQL']
+github: 'https://github.com/RyanRoy37/llm-guardrail-middleware'
+live: ''
+timeline: '1 Week'
+role: 'Backend / ML Engineer'
+team: 'Solo'
+status: 'Completed'
+featured: true
+challenges:
+  [
+    'Reducing false positives while maintaining strong security guarantees',
+    'Achieving low-latency inference for real-time prompt validation',
+    'Designing audit-friendly logging for sensitive prompt data'
+  ]
+learnings:
+  [
+    'Fine-tuning lightweight transformer models for classification tasks',
+    'Defense-in-depth strategies for LLM pipelines',
+    'Combining ML-based detection with rule-based filtering effectively'
+  ]
+isPublished: true
+---
+
+## Overview
+
+The **LLM Guardrail Middleware** is a protective layer designed to secure Large Language Model pipelines from unsafe inputs.
+
+It prevents **prompt injection, jailbreak attempts, and sensitive data leakage** before requests reach the LLM.
+
+## Detection Pipeline
+
+1. Trie-based banned word filtering
+2. Regex-based masking of emails and phone numbers
+3. BERT Tiny classifier for jailbreak detection
+4. PostgreSQL audit logging for analysis and monitoring
+
+## Model Details
+
+- Architecture: `prajjwal1/bert-tiny`
+- Validation Accuracy: ~90.7%
+- Probability thresholding to reduce false positives
+
+## API Endpoint
+
+```http
+POST /prompt

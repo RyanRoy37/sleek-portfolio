@@ -3,7 +3,7 @@ export const certificates = [
   // Example entry:
   // { file: '/certificates/my-cert.png', title: 'Course Name', issuer: 'Issuing Org', date: '2024-05' }
   // Add your SSoC certificate here (place the PNG in public/certificates/ssoc-piyush.png)
-  {
+ /* {
     file: '/certificates/ssoc-piyush.png',
     title: 'SSoC Certificate',
     issuer: 'Summer of Code (SSoC)',
@@ -15,7 +15,7 @@ export const certificates = [
     issuer: 'Example Issuer',
     date: '2024-01-01',
   },
-  {
+  {S
     file: '/certificates/example-certificate-2.png',
     title: 'Example Certificate 2',
     issuer: 'Example Issuer',
@@ -27,7 +27,7 @@ export const certificates = [
     title: 'SSoC Participation Certificate',
     issuer: 'SSoC',
     date: '2025-10-10',
-  },
+  },*/
 ];
 
 export default {

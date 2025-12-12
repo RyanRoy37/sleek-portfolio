@@ -1,0 +1,58 @@
+---
+title: 'HORUS 🦅'
+description: 'Offline bird identification mobile app using on-device AI models for detection and classification of bird species.'
+image: '/project/horus.png'
+technologies:
+  ['Flutter', 'Dart', 'TensorFlow Lite', 'ONNX', 'ResNet34', 'SSD MobileNet']
+github: 'https://github.com/RyanRoy37/Horus'
+live: ''
+timeline: '2 Weeks'
+role: 'Mobile & ML Engineer'
+team: 'Solo'
+status: 'Completed'
+featured: true
+challenges:
+  [
+    'Running detection and classification fully offline on mobile devices',
+    'Optimizing quantized models for acceptable inference latency',
+    'Managing multiple AI models within limited device resources'
+  ]
+learnings:
+  [
+    'Trade-offs between model accuracy and mobile performance',
+    'Practical deployment of ONNX and TensorFlow Lite models in Flutter',
+    'Designing offline-first AI systems for real-world field usage'
+  ]
+isPublished: true
+---
+
+## Overview
+
+**HORUS** is a Flutter-based mobile application built for bird watchers and nature enthusiasts.  
+It enables **offline bird species identification** using on-device AI models, without requiring an internet connection.
+
+## AI Pipeline
+
+HORUS integrates pretrained models from **OSEA Mobile**:
+
+- **Detection**: SSD MobileNet
+- **Classification**: ResNet34 trained using MetaFGNet
+- **Dataset**: DongNiao DIB-10K
+
+All inference is performed **locally on the device**.
+
+## Key Features
+
+- Camera-based bird recognition
+- Image import and carousel browsing
+- Curated bird information for Bengaluru
+- Fully offline operation for field environments
+
+## Why Offline Matters
+
+Birding often happens in remote or low-connectivity areas.  
+Offline inference ensures **privacy, reliability, and consistent usability**.
+
+## Conclusion
+
+HORUS demonstrates how modern mobile devices can run **production-grade AI pipelines locally**, enabling practical real-world ML applications.

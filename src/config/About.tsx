@@ -1,26 +1,34 @@
 import Bun from '@/components/technologies/Bun';
 import JavaScript from '@/components/technologies/JavaScript';
 import MongoDB from '@/components/technologies/MongoDB';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
 import ReactIcon from '@/components/technologies/ReactIcon';
-import TypeScript from '@/components/technologies/TypeScript';
+import AWS from '@/components/technologies/AWS';
+import ExpressJS from '@/components/technologies/ExpressJs';
+import FastAPI from '@/components/technologies/FastAPI';
+import Python from '@/components/technologies/Python';
+import Java from '@/components/technologies/Java';
+import Docker from '@/components/technologies/Docker';
+import Kubernetes from '@/components/technologies/Kubernetes';
+
 
 export const mySkills = [
   <ReactIcon key="react" />,
-  <Bun key="bun" />,
   <JavaScript key="javascript" />,
-  <TypeScript key="typescript" />,
   <MongoDB key="mongodb" />,
-  <NextJs key="nextjs" />,
   <NodeJs key="nodejs" />,
   <PostgreSQL key="postgresql" />,
-  <Prisma key="prisma" />,
+  <AWS key="aws"/>,
+  <ExpressJS key="expressjs"/>,
+  <FastAPI key="fastapi"/>,
+  <Python key="python"/>,
+  <Java key="java"/>,
+  <Docker key="docker"/>,
+  <Kubernetes key="kubernetes"/>,
 ];
 
 export const about = {
-  name: 'Ramkrishna Swarnkar',
-  description: `I'm a Full Stack web developer and Open Source Contributor, I love building products to solve real-world problems. I'm specialized in building MVP's.`,
+  name: 'J Ryan Roy',
+  description: `I am a software developer with a primary focus on backend development. I enjoy building software, whether its useful or not, because I love the art and the process, and don't focus too much on the outcome (idk if thats good lol). Anyways, though Ive been in this field for 4 years now, Ive only discovered this passion since a year or so. I am particularly facinated by software security and software in finance, and will be pursuing something in either of the two (hopefully;))`,
 };

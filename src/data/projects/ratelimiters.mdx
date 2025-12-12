@@ -1,0 +1,68 @@
+---
+title: 'API Rate Limiting Algorithms'
+description: 'FastAPI-based implementation and benchmarking of multiple API rate limiting algorithms for security and abuse prevention.'
+image: '/project/rate-limiting.png'
+technologies:
+  ['FastAPI', 'Python', 'AsyncIO', 'Apache JMeter', 'API Security']
+github: 'https://github.com/RyanRoy37/api-rate-limiting-fastapi'
+live: ''
+timeline: '1 Week'
+role: 'Backend Engineer'
+team: 'Solo'
+status: 'Completed'
+featured: true
+challenges:
+  [
+    'Handling concurrency safely in an async environment',
+    'Preventing race conditions across multiple clients',
+    'Accurately benchmarking limiter behavior under sustained load'
+  ]
+learnings:
+  [
+    'Token Bucket provides the most stable throughput for consumer APIs',
+    'Sliding Window is suitable for strict security enforcement',
+    'Fixed Window suffers from boundary effects under continuous traffic'
+  ]
+isPublished: true
+---
+
+## Overview
+
+This project explores **rate limiting as a core API security mechanism** for protecting backend services from abuse, enumeration, and DoS-style traffic.
+
+The system demonstrates and compares four widely used rate limiting algorithms implemented in **FastAPI** and tested under realistic load conditions.
+
+## Implemented Algorithms
+
+- **Fixed Window**
+- **Sliding Window Counter**
+- **Token Bucket**
+- **Leaky Bucket**
+
+Each limiter is applied **per client**, identified using the `X-Client-ID` header or request IP.
+
+## How It Works
+
+- Extract client identifier
+- Select limiter using query parameter
+- Apply `allow_request(key)`
+- Return response with standard rate-limit headers
+
+## Benchmarking & Results
+
+Load testing was performed using **Apache JMeter**:
+- 50 concurrent threads
+- 10-second ramp-up
+- 100 iterations
+- 111 seconds total duration
+
+### Key Observations
+
+- **Token Bucket** delivered consistent throughput (15–20 TPS)
+- **Sliding Window** showed strict enforcement with higher rejection rates
+- **Fixed Window** degraded over time due to boundary effects
+- **Leaky Bucket** exhibited moderate but unpredictable spike behavior
+
+## Conclusion
+
+This project enables **data-driven selection of rate limiting strategies** for production APIs, API gateways, and microservices architectures.

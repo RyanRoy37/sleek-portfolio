@@ -27,57 +27,57 @@ import Github from '@/components/svgs/Github';
 import LinkedIn from '@/components/svgs/LinkedIn';
 import Mail from '@/components/svgs/Mail';
 import X from '@/components/svgs/X';
-import Bun from '@/components/technologies/Bun';
+import ExpressJs from '@/components/technologies/ExpressJs';
+import FastAPI from '@/components/technologies/FastAPI';
+import Java from '@/components/technologies/Java';
 import JavaScript from '@/components/technologies/JavaScript';
 import MongoDB from '@/components/technologies/MongoDB';
-import NextJs from '@/components/technologies/NextJs';
 import NodeJs from '@/components/technologies/NodeJs';
 import PostgreSQL from '@/components/technologies/PostgreSQL';
-import Prisma from '@/components/technologies/Prisma';
+import Python from '@/components/technologies/Python';
 import ReactIcon from '@/components/technologies/ReactIcon';
 // Technology Components
-import TypeScript from '@/components/technologies/TypeScript';
 
 // Component mapping for skills
 export const skillComponents = {
-  TypeScript: TypeScript,
   ReactIcon: ReactIcon,
-  NextJs: NextJs,
-  Bun: Bun,
   PostgreSQL: PostgreSQL,
   NodeJs: NodeJs,
   MongoDB: MongoDB,
-  Prisma: Prisma,
   JavaScript: JavaScript,
+  Python: Python,
+  FastAPI: FastAPI,
+  ExpressJs: ExpressJs,
+  Java: Java,
 };
 
 export const heroConfig = {
   // Personal Information
-  name: 'Ram',
-  title: 'A Full Stack web developer.',
+  name: 'Ryan',
+  title: 'A Software developer (Backend).',
   avatar: '/assets/logo.png',
 
   // Skills Configuration
   skills: [
-    {
-      name: 'Typescript',
-      href: 'https://www.typescriptlang.org/',
-      component: 'TypeScript',
+     {
+      name: 'Python',
+      href: 'https://www.python.org/',
+      component: 'Python',
+    },
+     {
+      name: 'JavaScript',
+      href: 'https://javascript.info/',
+      component: 'JavaScript',
     },
     {
-      name: 'React',
-      href: 'https://react.dev/',
-      component: 'ReactIcon',
+      name: 'Express.js',
+      href: 'https://expressjs.com/',
+      component: 'ExpressJs',
     },
     {
-      name: 'Next.js',
-      href: 'https://nextjs.org/',
-      component: 'NextJs',
-    },
-    {
-      name: 'Bun',
-      href: 'https://bun.sh/',
-      component: 'Bun',
+      name: 'FastAPI',
+      href: 'https://fastapi.tiangolo.com/',
+      component: 'FastAPI',
     },
     {
       name: 'PostgreSQL',
@@ -89,7 +89,7 @@ export const heroConfig = {
   // Description Configuration
   description: {
     template:
-      'I build interactive web apps using {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. With a focus on <b>UI</b> design. Enthusiastic about <b>Three.js</b>, driven by a keen eye for design.',
+      'I build efficient software using {skills:0}, {skills:1}, {skills:2}, {skills:3} and {skills:4}. With a focus on <b>Software Security</b>. Enthusiastic about <b>Fintech</b>, driven by the potential in the field.',
   },
 
   // Buttons Configuration
@@ -113,22 +113,22 @@ export const heroConfig = {
 export const socialLinks = [
   {
     name: 'X',
-    href: 'https://x.com/ramxcodes',
+    href: 'https://x.com/RyanRoy37',
     icon: <X />,
   },
   {
     name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/ramxcodes/',
+    href: 'https://www.linkedin.com/in/ryan-roy-777791227/',
     icon: <LinkedIn />,
   },
   {
     name: 'Github',
-    href: 'https://github.com/ramxcodes',
+    href: 'https://github.com/RyanRoy37',
     icon: <Github />,
   },
   {
     name: 'Email',
-    href: 'mailto:ramxcodes@gmail.com',
+    href: 'mailto:jryanroy37@gmail.com',
     icon: <Mail />,
   },
 ];
